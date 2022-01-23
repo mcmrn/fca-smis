@@ -1,0 +1,127 @@
+.d--flex {
+  display: flex;
+}
+.d--grid {
+  display: grid;
+}
+.d--none {
+  display: none;
+}
+.t--bold {
+  font-weight: 700;
+}
+.t--light {
+  font-weight: 400;
+}
+.t--left {
+  text-align: left;
+}
+.t--right {
+  text-align: right;
+}
+.t--center {
+  text-align: center;
+}
+.red-critical:required {
+  background-color: $light-red;
+  border-color: $red-critical;
+  outline: none;
+}
+.red-critical {
+  background-color: $light-red;
+  color: $red-critical;
+  border-color: $red-critical;
+}
+.t--red {
+  color: $red-critical;
+}
+.banner--btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: $green-accent;
+  color: $light;
+  cursor: pointer;
+}
+.add--btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: $green-accent;
+  color: $light;
+  cursor: pointer;
+}
+.delete--btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: $yellow-warning;
+  color: $light;
+  cursor: pointer;
+}
+.okay--btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: $green-accent;
+  color: $light;
+  cursor: pointer;
+}
+.cancel--btn {
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: $dark-gray;
+  color: $light;
+  cursor: pointer;
+}
+.center--justify {
+  display: flex;
+  justify-content: center;
+}
+.center--all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table--btn {
+  align-items: center;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 1px solid $dark-gray;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.table--btn:hover {
+  background-color: $green-accent;
+  color: $light;
+}
+.dropdown:hover .dropdown-link {
+  display: block;
+}
+
+.t--light {
+  color: $light;
+}
+.showmore--btn {
+  padding: 1rem;
+  background-color: $green-accent;
+  border-radius: 0.5rem;
+  border: none;
+  color: $light;
+  cursor: pointer;
+}
+
+.border-bottom {
+  border-bottom: 3px solid $dark-gray;
+}
+.active {
+  border-left: 4px solid $light;
+  background-color: $light-bg;
+}
+.full--width {
+  width: 100%;
+}
+.full--height {
+  height: 100%;
+}

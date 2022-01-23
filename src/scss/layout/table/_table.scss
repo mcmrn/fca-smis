@@ -1,0 +1,68 @@
+.table {
+  background-color: $dark-gray;
+  padding: 3rem 3rem 3.5rem;
+  height: 100%;
+  @include maxScreen1060 {
+    background-color: unset;
+  }
+  @include maxScreen520 {
+    padding: 2rem 0 2.5rem;
+  }
+  table,
+  th,
+  td {
+    text-align: center;
+    border: 1px solid $dark-gray;
+    border-collapse: collapse;
+    padding: 1rem;
+    @include maxScreen1060 {
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(3),
+      td:nth-child(3),
+      th:nth-child(6),
+      td:nth-child(6),
+      th:nth-child(7),
+      td:nth-child(7) {
+        display: none;
+      }
+    }
+  }
+  tr:hover {
+    background-color: $light-gray;
+  }
+  table {
+    width: 100%;
+  }
+  &__wrapper {
+    // box-shadow: -0.5rem 0.5rem 2rem -0.99rem;
+    background-color: #fff;
+    padding: 2rem 2rem 2.3rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+  }
+  &__student {
+    box-shadow: 0 1px 5px $primary;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .dropdown-link {
+    display: none;
+    position: absolute;
+    background-color: $light;
+    margin-left: -9rem;
+    min-width: 15rem;
+    box-shadow: 0px 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    a {
+      color: $dark;
+      padding: 1rem;
+      display: block;
+    }
+    a:hover {
+      background-color: $dark-gray;
+    }
+  }
+}

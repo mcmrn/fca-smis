@@ -1,0 +1,63 @@
+$sizes: 1, 2, 3, 4, 5;
+
+@each $size in $sizes {
+  .mb--#{$size} {
+    margin-bottom: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .mt--#{$size} {
+    margin-top: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .ml--#{$size} {
+    margin-left: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .mr--#{$size} {
+    margin-right: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .pt--#{$size} {
+    padding-top: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .pb--#{$size} {
+    padding-bottom: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .pr--#{$size} {
+    padding-right: #{$size}rem;
+  }
+}
+@each $size in $sizes {
+  .pl--#{$size} {
+    padding-left: #{$size}rem;
+  }
+}
+
+@mixin maxScreen1060($width: 1060px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin maxScreen768($width: 768px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin maxScreen520($width: 520px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin minScreen768($width: 769px) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}

@@ -1,0 +1,48 @@
+.header {
+  position: relative;
+  padding: 1rem 2rem;
+  color: $light;
+  background-color: $primary;
+  @include maxScreen768 {
+    background-color: $light;
+    color: $dark;
+    border-bottom: 2px solid $dark;
+  }
+  &__schoolyear {
+    @include maxScreen520 {
+      display: none;
+    }
+  }
+  &__branding {
+    color: $dark-bg;
+    @include maxScreen520 {
+      display: flex;
+    }
+  }
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__profile {
+    gap: 2rem;
+    align-items: center;
+    @include maxScreen520 {
+      color: $dark-bg;
+    }
+    &__image {
+      align-items: center;
+      img {
+        border-radius: 5rem;
+      }
+    }
+  }
+  &__logout {
+    font-size: 2rem;
+  }
+  &__sidenav {
+    font-size: 2rem;
+    @include minScreen768 {
+      display: none;
+    }
+  }
+}
