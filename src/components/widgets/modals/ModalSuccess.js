@@ -20,7 +20,7 @@ const ModalSuccess = () => {
                     <FaTimes />
                   </div>
                 </header>
-                <div className="modal__body">
+                <div className="modal__confirmation">
                   <div className="modal__content full--height center--all">
                     <div>
                       <span className="check center--justify mb--1">

@@ -6,7 +6,7 @@ import { BsExclamationCircleFill } from "react-icons/bs";
 const ModalDelete = () => {
   return (
     <>
-      <div className="modal d--flex">
+      <div className="modal d--flex modal--front">
         <div className="container">
           <div className="modal__wrapper d--flex">
             <div className="modal__form">
@@ -20,7 +20,7 @@ const ModalDelete = () => {
                     <FaTimes />
                   </div>
                 </header>
-                <div className="modal__body">
+                <div className="modal__confirmation">
                   <div className="modal__content full--height center--all">
                     <div>
                       <span className="exclamation center--justify mb--1">

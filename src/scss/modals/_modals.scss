@@ -6,7 +6,7 @@
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9;
   height: 100vh;
   padding: 0 2rem;
   &__wrapper {
@@ -74,6 +74,10 @@
     height: 35vh;
     overflow: auto;
   }
+  &__confirmation {
+    height: 20vh;
+    overflow: auto;
+  }
   &__footer {
     padding-right: 1rem;
     gap: 0.5rem;
@@ -83,4 +87,7 @@
   &__foot {
     border-top: 2px solid $dark-gray;
   }
+}
+.modal--front {
+  z-index: 9999;
 }

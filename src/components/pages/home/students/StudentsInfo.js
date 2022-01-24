@@ -1,6 +1,7 @@
 import React from "react";
 import { AiFillCamera } from "react-icons/ai";
 import { MdSave } from "react-icons/md";
+import UserProfile from "../../../../img/profile.png";
 
 const StudentsInfo = () => {
   return (
@@ -15,7 +16,7 @@ const StudentsInfo = () => {
         </div>
         <div className="students__img">
           <p>Profile Image</p>
-          <img src="../img/profile.png" alt="img" />
+          <img src={UserProfile} alt="img" />
           <p>* Max 60kb Upload</p>
 
           <div className="upload-button">

@@ -7,6 +7,7 @@ import { BiUserPin } from "react-icons/bi";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { RiUserSettingsFill } from "react-icons/ri";
 import { AiFillSetting } from "react-icons/ai";
+import Logo from "../../img/logo-white.png";
 
 const SideNavigation = () => {
   return (
@@ -17,7 +18,7 @@ const SideNavigation = () => {
             <nav>
               <ul>
                 <header className="sidenav__logo">
-                  <img alt="img" src="../img/logo-white.png" />
+                  <img alt="img" src={Logo} />
                 </header>
                 <li>
                   <div className="sidenav__menu__list d--flex">

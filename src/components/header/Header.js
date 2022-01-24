@@ -1,6 +1,7 @@
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Profile from "../../img/jhonny.png";
 
 const Header = () => {
   return (
@@ -22,7 +23,7 @@ const Header = () => {
                 <span>Admin</span>
               </div>
               <div className="header__profile__image d--flex">
-                <img alt="img" src="../img/jhonny.png" id="dp" />
+                <img alt="img" src={Profile} id="dp" />
               </div>
               <div className="header__logout">
                 <FiLogOut />
