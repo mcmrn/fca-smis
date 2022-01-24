@@ -14,8 +14,8 @@ const Home = () => {
       <Header />
       <Banner />
       {/* <ModalCreate /> */}
-      <ModalDelete />
-      <ModalSuccess />
+      {/* <ModalDelete /> */}
+      {/* <ModalSuccess /> */}
       <StudentTable />
     </main>
   );
