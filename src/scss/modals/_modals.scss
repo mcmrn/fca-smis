@@ -30,6 +30,14 @@
       color: $light-bg;
       width: 100%;
     }
+    select {
+      padding: 1rem;
+      border-radius: 0.2rem;
+      outline: none;
+      border: 1px solid $dark-gray;
+      color: $light-bg;
+      width: 100%;
+    }
     input[type="radio"] {
       display: flex;
       width: unset;
@@ -71,10 +79,12 @@
     cursor: pointer;
   }
   &__body {
+    width: 35rem;
     height: 35vh;
     overflow: auto;
   }
   &__confirmation {
+    width: 40rem;
     height: 20vh;
     overflow: auto;
   }

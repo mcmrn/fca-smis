@@ -1,7 +1,7 @@
 .table {
   background-color: $dark-gray;
   padding: 3rem 3rem 3.5rem;
-  height: 100%;
+  height: 100vh;
   @include maxScreen1060 {
     background-color: unset;
   }
@@ -15,7 +15,14 @@
     border: 1px solid $dark-gray;
     border-collapse: collapse;
     padding: 1rem;
-    @include maxScreen1060 {
+  }
+  th:first-child,
+  th:last-child {
+    width: 5%;
+  }
+
+  @include maxScreen1060 {
+    table.table--students {
       th:nth-child(2),
       td:nth-child(2),
       th:nth-child(3),
@@ -28,6 +35,64 @@
       }
     }
   }
+  @include maxScreen520 {
+    table.table--teachers {
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(4),
+      td:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+  @include maxScreen520 {
+    table.table--sections {
+      th:nth-child(2),
+      td:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  @include maxScreen520 {
+    table.table--subjects {
+      th:nth-child(3),
+      td:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  @include maxScreen768 {
+    table.table--class {
+      th:nth-child(5),
+      td:nth-child(5),
+      th:nth-child(6),
+      td:nth-child(6) {
+        display: none;
+      }
+    }
+  }
+  @include maxScreen768 {
+    table.table--grade {
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(5),
+      td:nth-child(5),
+      th:nth-child(6),
+      td:nth-child(6),
+      th:nth-child(7),
+      td:nth-child(7) {
+        display: none;
+      }
+    }
+  }
+
+  table.table--grade {
+    th:last-child {
+      width: unset;
+    }
+  }
+
   tr:hover {
     background-color: $light-gray;
   }
@@ -41,6 +106,9 @@
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
+    @include maxScreen520 {
+      padding: 2rem 0.5rem;
+    }
   }
   &__student {
     box-shadow: 0 1px 5px $primary;
@@ -52,7 +120,7 @@
     display: none;
     position: absolute;
     background-color: $light;
-    margin-left: -9rem;
+    margin-left: -11rem;
     min-width: 15rem;
     box-shadow: 0px 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -63,6 +131,72 @@
     }
     a:hover {
       background-color: $dark-gray;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 10px $dark-gray;
+    @include maxScreen768 {
+      display: block;
+    }
+    .menu-label {
+      display: flex;
+      padding: 1rem 2.3rem;
+      margin-right: 0.1rem;
+      margin-bottom: 0.1rem;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background ease 0.2s;
+      font-size: 1.1rem;
+      position: relative;
+      background-color: $primary;
+      color: $light;
+    }
+    .menu-label:hover {
+      background-color: $green-accent;
+    }
+
+    .tab {
+      order: 99;
+      flex-grow: 1;
+      width: 100%;
+      display: none;
+      padding: 2rem;
+      background: $light;
+    }
+  }
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label {
+    background: $light;
+    color: $green-accent;
+  }
+
+  input[type="radio"]:checked + label + .tab {
+    display: block;
+  }
+  &__card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 0 1rem 1rem;
+    @include maxScreen1060 {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include maxScreen520 {
+      grid-template-columns: 1fr;
+    }
+    p {
+      margin: 1rem 0;
+    }
+    &__item {
+      padding: 2rem 2rem 3rem;
+      background-color: $light;
+      @include maxScreen1060 {
+        background-color: $dark-gray;
+      }
     }
   }
 }

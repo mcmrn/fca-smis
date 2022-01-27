@@ -38,6 +38,26 @@
         cursor: pointer;
       }
     }
+    &__result {
+      display: none;
+      position: absolute;
+      background-color: $light-gray;
+      height: 20vh;
+      overflow: auto;
+      width: 42%;
+      li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid $dark-gray;
+      }
+      li:hover {
+        background-color: $dark-gray;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        color: $primary;
+      }
+    }
   }
   &__button {
     @include maxScreen1060 {

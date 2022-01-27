@@ -1,9 +1,8 @@
 import React from "react";
-import { AiFillDelete } from "react-icons/ai";
+import { MdOutlineCreateNewFolder } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
-import { BsExclamationCircleFill } from "react-icons/bs";
 
-const ModalDelete = () => {
+const ModalCreateRole = () => {
   return (
     <>
       <div className="modal d--flex">
@@ -11,28 +10,31 @@ const ModalDelete = () => {
           <div className="modal__wrapper d--flex">
             <div className="modal__form">
               <form>
-                <header className="modal__delete d--flex">
+                <header className="modal__create d--flex">
                   <div className="modal__wrap d--flex">
-                    <AiFillDelete />
-                    <span className="ml--1">Confirmation</span>
+                    <MdOutlineCreateNewFolder />
+                    <span className="ml--1">Add Role Level</span>
                   </div>
                   <div className="modal__close d--flex">
                     <FaTimes />
                   </div>
                 </header>
                 <div className="modal__confirmation">
-                  <div className="modal__content full--height center--all">
-                    <div>
-                      <span className="exclamation center--justify mb--1">
-                        <BsExclamationCircleFill />
-                      </span>
-                      <p>Are you sure you want to delete this student?</p>
-                    </div>
+                  <div className="modal__content">
+                    <label htmlFor="cl">Class Level</label>
+                    <select name="level" id="level">
+                      <option value="Grade 1">Active</option>
+                      <option value="Grade 2">Grade 2</option>
+                    </select>
+                  </div>
+                  <div className="modal__content">
+                    <label htmlFor="lname">Name</label>
+                    <input type="text" />
                   </div>
                 </div>
                 <footer className="modal__foot">
                   <div className="modal__footer d--flex">
-                    <button className="delete--btn">Okay</button>
+                    <button className="add--btn">Add</button>
                     <button className="cancel--btn">Cancel</button>
                   </div>
                 </footer>
@@ -44,4 +46,4 @@ const ModalDelete = () => {
     </>
   );
 };
-export default ModalDelete;
+export default ModalCreateRole;

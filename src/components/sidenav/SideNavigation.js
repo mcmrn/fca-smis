@@ -15,11 +15,11 @@ const SideNavigation = () => {
       <section className="sidenav">
         <div className="sidenav__wrapper">
           <div className="sidenav__menu">
+            <div className="sidenav__logo">
+              <img alt="img" src={Logo} />
+            </div>
             <nav>
               <ul>
-                <header className="sidenav__logo">
-                  <img alt="img" src={Logo} />
-                </header>
                 <li>
                   <div className="sidenav__menu__list d--flex">
                     <div className="sidenav__icon">
@@ -40,19 +40,19 @@ const SideNavigation = () => {
                       </a>
                     </div>
                     <div className="sidenav__button">
-                      <a href="/">Students</a>
+                      <a href="/reactjs-training-fbs-smis">Students</a>
                     </div>
                   </div>
                 </li>
                 <li>
                   <div className="sidenav__menu__list d--flex">
                     <div className="sidenav__icon">
-                      <a href="#">
+                      <a href="/classes">
                         <HiUserGroup />
                       </a>
                     </div>
                     <div className="sidenav__button">
-                      <a href="#">Classes</a>
+                      <a href="/classes">Classes</a>
                     </div>
                   </div>
                 </li>
@@ -112,7 +112,7 @@ const SideNavigation = () => {
                       </a>
                     </div>
                     <div className="sidenav__button">
-                      <a href="#">Settings</a>
+                      <a href="/settings">Settings</a>
                     </div>
                   </div>
                 </li>

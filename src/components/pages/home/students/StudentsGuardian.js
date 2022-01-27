@@ -27,11 +27,13 @@ const StudentsGuardian = () => {
 
                 <div className="students__form__gender d--flex">
                   <input type="radio" value="bio" name="gender" />
-                  <label htmlFor="bio" className="mr--4">
+                  <label htmlFor="bio" className="mr--1">
                     Biological or Adoptive Mother
                   </label>
                   <input type="radio" value="stepmom" name="gender" />
-                  <label htmlFor="stepmom">Step-Mother</label>
+                  <label htmlFor="stepmom" className="mr--1">
+                    Step-Mother
+                  </label>
 
                   <input type="radio" value="other" name="gender" />
                   <label htmlFor="other">Other</label>

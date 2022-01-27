@@ -1,5 +1,6 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+import SearchResult from "./SearchResult";
 
 const SearchBar = () => {
   return (
@@ -12,6 +13,7 @@ const SearchBar = () => {
             <BsSearch />
           </button>
         </form>
+        <SearchResult />
       </div>
     </>
   );

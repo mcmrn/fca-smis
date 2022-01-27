@@ -44,6 +44,13 @@
   color: $light;
   cursor: pointer;
 }
+.settings--btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: $green-accent;
+}
 .add--btn {
   padding: 1rem 3rem;
   border: none;
@@ -87,7 +94,7 @@
 }
 .table--btn {
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   background-color: transparent;
   border: 1px solid $dark-gray;
   border-radius: 0.5rem;
@@ -125,4 +132,7 @@
 }
 .full--height {
   height: 100%;
+}
+.inactive {
+  color: $dark-gray;
 }

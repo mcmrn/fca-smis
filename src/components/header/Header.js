@@ -4,6 +4,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Profile from "../../img/jhonny.png";
 
 const Header = () => {
+  // const { isShow, setIsShow } = show;
+  // const handleShow = () => setIsShow(!isShow);
+
   return (
     <>
       <header className="header">
@@ -28,7 +31,11 @@ const Header = () => {
               <div className="header__logout">
                 <FiLogOut />
               </div>
-              <div className="header__sidenav">
+              <div
+                id="toggle"
+                className="header__sidenav"
+                onClick={() => handleShow()}
+              >
                 <GiHamburgerMenu />
               </div>
             </div>

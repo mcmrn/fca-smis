@@ -1,12 +1,13 @@
 .header {
   position: relative;
-  padding: 1rem 2rem;
   color: $light;
   background-color: $primary;
+  height: 9rem;
   @include maxScreen768 {
     background-color: $light;
     color: $dark;
     border-bottom: 2px solid $dark;
+    z-index: 1;
   }
   &__schoolyear {
     @include maxScreen520 {
@@ -22,6 +23,13 @@
   &__wrapper {
     justify-content: space-between;
     align-items: center;
+    padding: 2rem;
+    @include maxScreen391 {
+      padding: 2rem 1rem;
+    }
+    @include maxScreen371 {
+      padding: 1rem;
+    }
   }
   &__profile {
     gap: 2rem;

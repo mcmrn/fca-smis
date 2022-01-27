@@ -56,6 +56,16 @@ $sizes: 1, 2, 3, 4, 5;
     @content;
   }
 }
+@mixin maxScreen391($width: 391px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+@mixin maxScreen371($width: 371px) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
 @mixin minScreen768($width: 769px) {
   @media screen and (min-width: $width) {
     @content;

@@ -1,4 +1,7 @@
 .sidenav {
+  &__menu.show {
+    left: 0;
+  }
   &__menu {
     position: relative;
     background-color: $primary;
@@ -13,27 +16,15 @@
       width: 10rem;
     }
     @include maxScreen768 {
+      width: 100%;
       display: none;
     }
     &__list {
       align-items: center;
       margin-left: 1.5rem;
-      // a {
-      //   margin-left: 1rem;
-      //   height: 100%;
-      //   width: 100%;
-      //   padding: 1rem 0;
-      //   @include maxScreen1060 {
-      //     display: none;
-      //   }
-      // }
-      // span {
-      //   color: $blue-accent;
-      //   @include maxScreen1060 {
-      //     padding: 1rem 2rem;
-      //     font-size: 3rem;
-      //   }
-      // }
+      @include maxScreen768 {
+        margin-left: unset;
+      }
     }
     li {
       border-bottom: 1px solid $light-bg;
@@ -47,6 +38,7 @@
     a {
       color: $blue-accent;
       display: flex;
+
       @include maxScreen1060 {
         padding: 1rem 2rem;
         font-size: 3rem;
@@ -62,6 +54,9 @@
     @include maxScreen1060 {
       display: none;
     }
+    @include maxScreen768 {
+      display: flex;
+    }
     a {
       width: 100%;
     }
@@ -72,7 +67,8 @@
     align-items: center;
     background-color: $dark-bg;
     padding: 1rem 0;
-    height: 7.1rem;
+    height: 9rem;
+    overflow: hidden;
     img {
       width: 80%;
     }

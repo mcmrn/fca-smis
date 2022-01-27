@@ -1,16 +1,30 @@
 import React from "react";
 import { BsFillGearFill } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
+import BannerCreateButton from "../../../widgets/BannerCreateButton";
+import SearchBar from "../../../widgets/SearchBar";
 import ShowMore from "../../../widgets/ShowMore";
 
 const StudentTable = () => {
   return (
     <>
-      <section className="table">
+      <section className="content">
+      <div className="banner">
+        <div className="">
+          <div className="banner__wrapper d--flex">
+            <div className="banner__text">
+              <h3>STUDENTS</h3>
+            </div>
+            <SearchBar />
+            <BannerCreateButton />
+          </div>
+        </div>
+      </div>
+      <div className="table">
         <div className="">
           <div className="table__wrapper">
             <div className="table__body">
-              <table>
+              <table className="table--students">
                 <thead>
                   <tr>
                     <th>#</th>
@@ -33,15 +47,17 @@ const StudentTable = () => {
                     <td>Dan Josepth</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn t--red">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -54,15 +70,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn t--red">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -75,15 +93,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn t--red">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -96,15 +116,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -117,15 +139,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn ">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -138,15 +162,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn ">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -158,15 +184,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn t--red ">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -179,15 +207,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn ">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -200,15 +230,17 @@ const StudentTable = () => {
                     <td>Alexander</td>
                     <td>N/A</td>
                     <td>2021-02-12</td>
-                    <td className="dropdown">
-                      <button className=" table--btn t--red ">
-                        <BsFillGearFill />
-                        <IoMdArrowDropdown />
-                      </button>
-                      <div className="dropdown-link">
-                        <a href="/students">Edit</a>
-                        <a href="#">Delete</a>
-                        <a href="#">View Grades</a>
+                    <td>
+                      <div className="dropdown">
+                        <button className=" table--btn t--red">
+                          <BsFillGearFill />
+                          <IoMdArrowDropdown />
+                        </button>
+                        <div className="dropdown-link">
+                          <a href="/students">Edit</a>
+                          <a href="#">Delete</a>
+                          <a href="#">View Grades</a>
+                        </div>
                       </div>
                     </td>
                   </tr>
@@ -218,6 +250,7 @@ const StudentTable = () => {
             <ShowMore />
           </div>
         </div>
+      </div>
       </section>
     </>
   );
