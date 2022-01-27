@@ -12,8 +12,8 @@
     "web-vitals": "^2.1.3"
   },
   "devDependencies": {
-    "react-scripts": "^5.0.0",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,8 +32,8 @@
   "bugs": {
     "url": "https://github.com/mcmrn/reactjs-training-fbs-smis/issues"
   },
-  "homepage": "https://mcmrn.github.io/reactjs-training-fca-smis",
-  "browserslist": { 
+  "homepage": "https://mcmrn.github.io/fca-smis",
+  "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
