@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/fca-smis/static/css/main.3266f439.css",
+    "main.js": "/fca-smis/static/js/main.ced12a5f.js",
+    "static/js/787.d96c504f.chunk.js": "/fca-smis/static/js/787.d96c504f.chunk.js",
+    "static/media/logo-white.png": "/fca-smis/static/media/logo-white.bba77181b26021a7dedd.png",
+    "static/media/profile.png": "/fca-smis/static/media/profile.e501ebd663a189311647.png",
+    "static/media/jhonny.png": "/fca-smis/static/media/jhonny.226d0977007ef7659086.png",
+    "index.html": "/fca-smis/index.html",
+    "main.3266f439.css.map": "/fca-smis/static/css/main.3266f439.css.map",
+    "main.ced12a5f.js.map": "/fca-smis/static/js/main.ced12a5f.js.map",
+    "787.d96c504f.chunk.js.map": "/fca-smis/static/js/787.d96c504f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3266f439.css",
+    "static/js/main.ced12a5f.js"
+  ]
+}
