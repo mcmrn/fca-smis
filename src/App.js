@@ -16,7 +16,7 @@ import Students from "./components/pages/home/students/Students";
 const App = () => {
   return (
     <div>
-      <Router>
+      <Router basename="/reactjs-training-fbs-smis">
         <Routes>
           <Route exact path="/reactjs-training-fbs-smis" element={<Home />} />
           <Route exact path="/students" element={<Students />} />
