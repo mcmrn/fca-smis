@@ -19,7 +19,7 @@ const Home = () => {
       {/* <ModalCreateStudent /> */}
       {/* <ModalDeleteStudent /> */}
       {/* <ModalSuccess /> */}
-      <Spinner />
+      {/* <Spinner /> */}
       <StudentTable />
     </main>
   );
