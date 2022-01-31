@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../../header/Header";
+import NoData from "../../../nodata/NoData";
 import SideNavigation from "../../../sidenav/SideNavigation";
 import StudentsLegal from "./StudentLegal";
 import StudentsGuardian from "./StudentsGuardian";
@@ -10,6 +11,7 @@ const Students = () => {
     <>
       <Header />
       <SideNavigation />
+      {/* <NoData /> */}
       <section className="content">
         <div className="banner">
           <div className="">

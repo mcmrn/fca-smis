@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillDelete } from "react-icons/ai";
 import { FaTimes } from "react-icons/fa";
 import { BsExclamationCircleFill } from "react-icons/bs";
+import SpinnerButton from "../SpinnerButton";
 
 const ModalDeleteStudent = () => {
   return (
@@ -32,7 +33,9 @@ const ModalDeleteStudent = () => {
                 </div>
                 <footer className="modal__foot">
                   <div className="modal__footer d--flex">
-                    <button className="delete--btn">Okay</button>
+                    <button className="delete--btn">
+                      Okay <SpinnerButton />
+                    </button>
                     <button className="cancel--btn">Cancel</button>
                   </div>
                 </footer>

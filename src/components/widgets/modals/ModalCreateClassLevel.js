@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineCreateNewFolder } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
+import SpinnerButton from "../SpinnerButton";
 
 const ModalCreateClassLevel = () => {
   return (
@@ -34,7 +35,9 @@ const ModalCreateClassLevel = () => {
                 </div>
                 <footer className="modal__foot">
                   <div className="modal__footer d--flex">
-                    <button className="add--btn">Add</button>
+                    <button className="add--btn">
+                      Add <SpinnerButton />
+                    </button>
                     <button className="cancel--btn">Cancel</button>
                   </div>
                 </footer>

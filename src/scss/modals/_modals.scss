@@ -15,9 +15,12 @@
   }
   &__form {
     background-color: $light;
+    width: 35rem;
   }
   &__content {
     padding: 1rem 1.5rem;
+    width: 35rem;
+    text-align: center;
     label {
       font-size: 1.3rem;
       color: $light-bg;
@@ -84,7 +87,6 @@
     overflow: auto;
   }
   &__confirmation {
-    width: 40rem;
     height: 20vh;
     overflow: auto;
   }
@@ -93,6 +95,7 @@
     gap: 0.5rem;
     margin: 1rem 0;
     justify-content: right;
+    position: relative;
   }
   &__foot {
     border-top: 2px solid $dark-gray;

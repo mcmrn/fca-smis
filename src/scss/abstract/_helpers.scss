@@ -37,12 +37,13 @@
   color: $red-critical;
 }
 .banner--btn {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   border: none;
   border-radius: 0.5rem;
   background-color: $green-accent;
   color: $light;
   cursor: pointer;
+  min-width: 12rem;
 }
 .settings--btn {
   font-size: 1.2rem;
@@ -52,28 +53,31 @@
   background-color: $green-accent;
 }
 .add--btn {
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   border: none;
   border-radius: 0.2rem;
   background-color: $green-accent;
   color: $light;
   cursor: pointer;
+  min-width: 12rem;
 }
 .delete--btn {
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   border: none;
   border-radius: 0.2rem;
   background-color: $yellow-warning;
   color: $light;
   cursor: pointer;
+  min-width: 12rem;
 }
 .okay--btn {
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   border: none;
   border-radius: 0.2rem;
   background-color: $green-accent;
   color: $light;
   cursor: pointer;
+  min-width: 12rem;
 }
 .cancel--btn {
   padding: 1rem 3rem;
@@ -112,11 +116,12 @@
   color: $light;
 }
 .showmore--btn {
-  padding: 1rem;
+  padding: 1rem 0;
   background-color: $green-accent;
   border-radius: 0.5rem;
   border: none;
   color: $light;
+  min-width: 12rem;
   cursor: pointer;
 }
 

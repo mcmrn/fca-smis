@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineCreateNewFolder } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
+import SpinnerButton from "../SpinnerButton";
 
 const ModalCreate = () => {
   return (
@@ -10,7 +11,7 @@ const ModalCreate = () => {
           <div className="modal__wrapper d--flex">
             <div className="modal__form">
               <form>
-                <header className="modal__create d--flex">
+                <div className="modal__create d--flex">
                   <div className="modal__wrap d--flex">
                     <MdOutlineCreateNewFolder />
                     <span className="ml--1">New Student</span>
@@ -18,7 +19,7 @@ const ModalCreate = () => {
                   <div className="modal__close d--flex">
                     <FaTimes />
                   </div>
-                </header>
+                </div>
                 <div className="modal__body">
                   <div className="modal__content">
                     <label htmlFor="sn">Student No.</label>
@@ -50,7 +51,9 @@ const ModalCreate = () => {
                 </div>
                 <footer className="modal__foot">
                   <div className="modal__footer d--flex">
-                    <button className="add--btn">Add</button>
+                    <button className="add--btn">
+                      Add <SpinnerButton />
+                    </button>
                     <button className="cancel--btn">Cancel</button>
                   </div>
                 </footer>

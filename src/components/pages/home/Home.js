@@ -2,9 +2,10 @@ import React from "react";
 import Banner from "../../banner/Banner";
 import Header from "../../header/Header";
 import SideNavigation from "../../sidenav/SideNavigation";
-import ModalCreate from "../../widgets/modals/ModalCreateStudent";
-import ModalDelete from "../../widgets/modals/ModalDeleteStudent";
+import ModalCreateStudent from "../../widgets/modals/ModalCreateStudent";
+import ModalDeleteStudent from "../../widgets/modals/ModalDeleteStudent";
 import ModalSuccess from "../../widgets/modals/ModalSuccess";
+import Spinner from "../../widgets/Spinner";
 import ClassesTable from "./classes/ClassesTable";
 import StudentTable from "./students/StudentsTable";
 
@@ -18,6 +19,7 @@ const Home = () => {
       {/* <ModalCreateStudent /> */}
       {/* <ModalDeleteStudent /> */}
       {/* <ModalSuccess /> */}
+      <Spinner />
       <StudentTable />
     </main>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFillGearFill } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
+import NoData from "../../../nodata/NoData";
 import BannerCreateButton from "../../../widgets/BannerCreateButton";
 import SearchBar from "../../../widgets/SearchBar";
 
@@ -37,7 +38,7 @@ const ClassesTable = () => {
                   </thead>
 
                   <tbody>
-                    <tr className="">
+                    {/* <tr className="">
                       <td>1</td>
                       <td>Grade 1</td>
                       <td>A</td>
@@ -231,6 +232,12 @@ const ClassesTable = () => {
                             <a href="#">Archive</a>
                           </div>
                         </div>
+                      </td>
+                    </tr> */}
+
+                    <tr className="">
+                      <td colSpan="100%">
+                        <NoData />
                       </td>
                     </tr>
                   </tbody>
