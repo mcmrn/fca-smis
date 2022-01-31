@@ -1,16 +1,18 @@
 import React from "react";
-import { BsFillGearFill } from "react-icons/bs";
+import { BsFillGearFill, BsFillPlusCircleFill } from "react-icons/bs";
 import { IoMdArrowDropdown } from "react-icons/io";
 import NoData from "../../../nodata/NoData";
 import BannerCreateButton from "../../../widgets/BannerCreateButton";
 import SearchBar from "../../../widgets/SearchBar";
 import ShowMore from "../../../widgets/ShowMore";
 import { studentData } from "../../../data/StudentData.js";
+import ModalCreateStudent from "../../../widgets/modals/ModalCreateStudent.js";
 const StudentTable = () => {
+  const [isAdd, setIsAdd] = React.useState(false);
+
+  const handleAdd = () => setIsAdd(true);
   let count = 0;
 
-  console.log(studentData);
-  console.log(studentData.length);
   return (
     <>
       <section className="content">
@@ -21,7 +23,15 @@ const StudentTable = () => {
                 <h3>STUDENTS</h3>
               </div>
               <SearchBar />
-              <BannerCreateButton />
+
+              <div className="banner__button">
+                <button className="banner--btn d--flex" onClick={handleAdd}>
+                  <span className="mr--1">
+                    <BsFillPlusCircleFill />
+                  </span>
+                  Create New
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -48,7 +58,7 @@ const StudentTable = () => {
                       studentData.map((item, key) => {
                         count += 1;
                         return (
-                          <tr className="red-critical">
+                          <tr className="red-critical" key={key}>
                             <td>{count}</td>
                             <td>{item.enrollment_status}</td>
                             <td>{item.lrn}</td>
@@ -87,6 +97,8 @@ const StudentTable = () => {
           </div>
         </div>
       </section>
+
+      {isAdd && <ModalCreateStudent />}
     </>
   );
 };

@@ -19,8 +19,8 @@
   }
   &__content {
     padding: 1rem 1.5rem;
-    width: 35rem;
-    text-align: center;
+    // width: 35rem;
+    // text-align: center;
     label {
       font-size: 1.3rem;
       color: $light-bg;
@@ -82,7 +82,7 @@
     cursor: pointer;
   }
   &__body {
-    width: 35rem;
+    // width: 35rem;
     height: 35vh;
     overflow: auto;
   }
